@@ -9,10 +9,7 @@ import os
 # Adiciona o diretório raiz ao sys.path para localizar o módulo 'app'
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from app.app import create_app  # Agora deve funcionar
-
-# Resto do código de teste...
-
+from app import create_app 
 
 # Configuração para recuperar a URI do MongoDB de variáveis de ambiente
 MONGO_URI = os.getenv('MONGO_URI', 'mongodb+srv://nahuelayala055:<dD1nwtvwq3EaBcK3a>@cluster0.luw32.mongodb.net/')  # Exemplo de URI
